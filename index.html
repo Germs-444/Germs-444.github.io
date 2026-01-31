@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERMANN TECHI | Portfolio 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">GT</span>
+                <span class="logo-full">GERMANN TECHI</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> À propos</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Compétences</a></li>
+                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h3 class="hero-subtitle">Bienvenue sur mon portfolio</h3>
+                <h1 class="hero-title">
+                    Salut, je suis <span class="text-gradient">GERMANN TECHI</span>
+                </h1>
+                <h2 class="hero-role">Développeur Full Stack & Ingénieur Logiciel</h2>
+                <p class="hero-description">
+                    Passionné par la création de solutions digitales innovantes, 
+                    je combine expertise technique et créativité pour développer 
+                    des applications web et mobiles performantes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Voir mes projets
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Me contacter
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Projets réalisés</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Années d'expérience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Technologies maîtrisées</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image slide-in">
+                <div class="image-wrapper">
+                    <img src="assets/image/logo.jpg" alt="GERMANN TECHI" class="profile-img" width="200">
+                    <div class="image-glow"></div>
+                    <div class="tech-badge flutter">
+                        <i class="fab fa-flutter"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="tech-badge angular">
+                        <i class="fab fa-angular"></i>
+                        <span>Angular</span>
+                    </div>
+                    <div class="tech-badge javascript">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-badge python">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <a href="#highlights" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="section highlights">
+        <div class="container">
+            <h2 class="section-title">Ce que je fais</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Création d'applications web modernes et responsives avec les dernières technologies.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Apps Mobiles</h3>
+                    <p>Développement d'applications cross-platform avec Flutter pour iOS et Android.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Conception d'interfaces utilisateur intuitives et d'expériences utilisateur optimales.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend & APIs</h3>
+                    <p>Développement de serveurs robustes et d'APIs sécurisées pour vos applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets en vedette</h2>
+                <a href="projects.html" class="view-all">
+                    Voir tous <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="project-showcase">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/image/Afrisante.jpeg" alt="Afrisante" width="90">
+                        <div class="project-overlay">
+                            <a href="projects.html#afrisante" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Santé Digital</span>
+                        <h3 class="project-title">Afrisante</h3>
+                        <p class="project-description">
+                            Application mobile de E-SANTE connectant patients et professionnels de santé 
+                            avec prise de rendez-vous en ligne, consultation virtuelle et suivi médical.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <!-- <span class="tech-tag">Node.js</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt à démarrer votre projet ?</h2>
+                <p class="cta-text">
+                    Discutons de votre idée et créons ensemble quelque chose d'extraordinaire.
+                </p>
+                <a href="contact.html" class="btn btn-large">
+                    <i class="fas fa-comments"></i> Discuter d'un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">GT</span>
+                        <span class="logo-full">GERMANN TECHI</span>
+                    </a>
+                    <p class="footer-description">
+                        Développeur passionné créant l'avenir numérique, une ligne de code à la fois.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Germs-444/Germs-444" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/germann-sandes-techi-kaptue/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="skills.html">Compétences</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Applications Mobiles</a></li>
+                        <li><a href="#">Consulting Tech</a></li>
+                        <li><a href="#">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:germanntechi@email.com">germanntechi@email.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+237675113336">+237 675 113 336</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Douala, Cameroun</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 GERMANN TECHI. Tous droits réservés.</p>
+                <p>Portfolio germanntechi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <audio id="backgroundMusic" loop>
+    <!-- Lien direct vers une musique libre -->
+    <source src="https://youtu.be/32dGIHCzbfE" type="audio/mpeg">
+</audio>
+</body>
+</html>

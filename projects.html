@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | GERMANN TECHI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">GT</span>
+                <span class="logo-full">GERMANN TECHI</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> À propos</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Compétences</a></li>
+                    <li><a href="projects.html" class="nav-link active"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Mes Projets</h1>
+            <p class="page-subtitle">Découvrez mes réalisations et applications développées avec passion et expertise</p>
+            
+            <!-- Project Stats -->
+            <div class="project-stats">
+                <div class="stat-item">
+                    <h3>8+</h3>
+                    <p>Projets réalisés</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5</h3>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3</h3>
+                    <p>Applications en production</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Taux de réussite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="section project-filters">
+        <div class="container">
+            <div class="filters-container">
+                <h2 class="filters-title">Filtrer par technologie</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="flutter">Flutter</button>
+                    <button class="filter-btn" data-filter="angular">Angular</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                </div>
+                
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="projectSearch" placeholder="Rechercher un projet...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects-grid-section">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projet 1: Afrisante -->
+                <div class="project-item" data-category="flutter mobile" data-tech="flutter firebase dart">
+                    <div class="project-card">
+                        <div class="project-badge featured">
+                            <i class="fas fa-star"></i> Projet Vedette
+                        </div>
+                        <div class="project-image">
+                            <div class="image-slider">
+                                <img src="assets/images/afrisante-1.jpg" alt="Afrisante Interface">
+                                <img src="assets/images/afrisante-2.jpg" alt="Afrisante Consultation">
+                                <img src="assets/images/afrisante-3.jpg" alt="Afrisante Rendez-vous">
+                            </div>
+                            <div class="image-counter">
+                                <span class="current-slide">1</span> / <span class="total-slides">3</span>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <button class="overlay-btn view-details" data-project="afrisante">
+                                        <i class="fas fa-eye"></i> Détails
+                                    </button>
+                                    <a href="https://github.com/votre-repo/afrisante" class="overlay-btn github-link" target="_blank">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Santé Digital</span>
+                                    <h3 class="project-title">Afrisante</h3>
+                                </div>
+                                <div class="project-year">2024</div>
+                            </div>
+                            
+                            <p class="project-description">
+                                Application mobile révolutionnaire de E-SANTE connectant patients et professionnels 
+                                de santé en Afrique. Permet la prise de rendez-vous, consultation virtuelle, 
+                                suivi médical et accès aux dossiers médicaux sécurisés.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag flutter">Flutter</span>
+                                <span class="tech-tag firebase">Firebase</span>
+                                <span class="tech-tag dart">Dart</span>
+                                <span class="tech-tag nodejs">Node.js</span>
+                                <span class="tech-tag mongo">MongoDB</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Fonctionnalités principales :</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Prise de rendez-vous en ligne</li>
+                                    <li><i class="fas fa-check-circle"></i> Consultation vidéo intégrée</li>
+                                    <li><i class="fas fa-check-circle"></i> Dossiers médicaux électroniques</li>
+                                    <li><i class="fas fa-check-circle"></i> Rappels de médicaments</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link demo">
+                                    <i class="fas fa-play-circle"></i> Voir la démo
+                                </a>
+                                <a href="#" class="project-link case-study">
+                                    <i class="fas fa-file-alt"></i> Étude de cas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2: E-Commerce -->
+                <div class="project-item" data-category="angular web" data-tech="angular typescript bootstrap">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/ecommerce.jpg" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details" data-project="ecommerce">
+                                    <i class="fas fa-eye"></i> Détails
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">E-Commerce</span>
+                                    <h3 class="project-title">ShopEasy Pro</h3>
+                                </div>
+                                <div class="project-year">2023</div>
+                            </div>
+                            
+                            <p class="project-description">
+                                Plateforme e-commerce complète avec gestion d'inventaire, panier d'achat, 
+                                paiements sécurisés et système de recommandation basé sur l'IA.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag angular">Angular</span>
+                                <span class="tech-tag typescript">TypeScript</span>
+                                <span class="tech-tag bootstrap">Bootstrap</span>
+                                <span class="tech-tag nodejs">Node.js</span>
+                                <!-- <span class="tech-tag stripe">Stripe</span> -->
+                            </div>
+                            
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <h4>+40%</h4>
+                                        <p>Augmentation des ventes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3: Gestion de Tâches -->
+                <div class="project-item" data-category="flutter mobile" data-tech="flutter dart">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/taskapp.jpg" alt="Task Management App">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details" data-project="taskapp">
+                                    <i class="fas fa-eye"></i> Détails
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Productivité</span>
+                                    <h3 class="project-title">TaskFlow</h3>
+                                </div>
+                                <div class="project-year">2024</div>
+                            </div>
+                            
+                            <p class="project-description">
+                                Application de gestion de tâches intelligente avec synchronisation en temps réel, 
+                                collaboration d'équipe et rappels intelligents.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag flutter">Flutter</span>
+                                <span class="tech-tag dart">Dart</span>
+                                <span class="tech-tag firebase">Firebase</span>
+                                <span class="tech-tag notifications">Notifications</span>
+                            </div>
+                            
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.7/5 sur App Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4: Analyse de Données -->
+                <div class="project-item" data-category="python web" data-tech="python django chartjs">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/dashboard.jpg" alt="Data Dashboard">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details" data-project="dashboard">
+                                    <i class="fas fa-eye"></i> Détails
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Data Science</span>
+                                    <h3 class="project-title">DataViz Pro</h3>
+                                </div>
+                                <div class="project-year">2023</div>
+                            </div>
+                            
+                            <p class="project-description">
+                                Tableau de bord d'analyse de données en temps réel avec visualisations interactives, 
+                                rapports automatiques et prédictions basées sur machine learning.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag python">Python</span>
+                                <span class="tech-tag django">Django</span>
+                                <span class="tech-tag chartjs">Chart.js</span>
+                                <span class="tech-tag ml">Machine Learning</span>
+                            </div>
+                            
+                            <div class="project-impact">
+                                <i class="fas fa-bolt"></i>
+                                <span>Réduction de 60% du temps d'analyse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 5: Portfolio -->
+                <div class="project-item" data-category="web" data-tech="html css javascript">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/portfolio.jpg" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details" data-project="portfolio">
+                                    <i class="fas fa-eye"></i> Détails
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Portfolio</span>
+                                    <h3 class="project-title">Portfolio 2026</h3>
+                                </div>
+                                <div class="project-year">2026</div>
+                            </div>
+                            
+                            <p class="project-description">
+                                Portfolio moderne et responsive avec animations avancées, mode sombre/clair, 
+                                et design optimisé pour l'expérience utilisateur.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag html">HTML5</span>
+                                <span class="tech-tag css">CSS3</span>
+                                <span class="tech-tag js">JavaScript</span>
+                                <span class="tech-tag animations">Animations</span>
+                            </div>
+                            
+                            <div class="project-note">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Le site que vous visitez actuellement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 6: API REST -->
+                <div class="project-item" data-category="python web" data-tech="python fastapi postgresql">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/api.jpg" alt="API REST">
+                            <div class="project-overlay">
+                                <button class="overlay-btn view-details" data-project="api">
+                                    <i class="fas fa-eye"></i> Détails
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-category">Backend</span>
+                                    <h3 class="project-title">SecureAPI</h3>
+                                </div>
+                                <div class="project-year">2024</div>
+                            </div>
+                            
+                            <p class="project-description">
+                                API REST sécurisée avec authentification JWT, rate limiting, documentation 
+                                interactive (Swagger) et tests automatisés.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag python">Python</span>
+                                <span class="tech-tag fastapi">FastAPI</span>
+                                <span class="tech-tag postgres">PostgreSQL</span>
+                                <span class="tech-tag jwt">JWT</span>
+                                <span class="tech-tag docker">Docker</span>
+                            </div>
+                            
+                            <div class="project-performance">
+                                <div class="performance-metric">
+                                    <h4>99.9%</h4>
+                                    <p>Uptime</p>
+                                </div>
+                                <div class="performance-metric">
+                                    <h4>&lt;100ms</h4>
+                                    <p>Latence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-secondary" id="loadMore">
+                    <i class="fas fa-plus"></i> Charger plus de projets
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-body" id="modalBody">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Vous avez un projet en tête ?</h2>
+                <p class="cta-text">
+                    Discutons de votre idée et créons ensemble quelque chose d'extraordinaire.
+                </p>
+                <a href="contact.html" class="btn btn-large">
+                    <i class="fas fa-comments"></i> Discuter d'un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">GT</span>
+                        <span class="logo-full">GERMANN TECHI</span>
+                    </a>
+                    <p class="footer-description">
+                        Développeur passionné créant l'avenir numérique, une ligne de code à la fois.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Germs-444/Germs-444" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/germann-sandes-techi-kaptue/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="skills.html">Compétences</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Applications Mobiles</a></li>
+                        <li><a href="#">Consulting Tech</a></li>
+                        <li><a href="#">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:germanntechi@email.com">germanntechi@email.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+237675113336">+237 675 113 336</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Douala, Cameroun</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 GERMANN TECHI. Tous droits réservés.</p>
+                <p>Portfolio conçu avec ❤️ et du code propre</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+    
+    <style>
+        /* Projects Page Specific Styles */
+        .project-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            min-width: 120px;
+        }
+        
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        
+        .stat-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .project-filters {
+            padding: 40px 0;
+            background: var(--bg-secondary);
+        }
+        
+        .filters-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .filters-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.3rem;
+            color: var(--text-primary);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .search-box i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+        
+        #projectSearch {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+        
+        #projectSearch:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .projects-grid-section {
+            padding-top: 20px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-item {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .project-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--gradient);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .project-badge.featured {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+        }
+        
+        .project-image {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .image-slider {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s;
+        }
+        
+        .image-slider img {
+            width: 33.333%;
+            flex-shrink: 0;
+        }
+        
+        .image-counter {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        .overlay-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .overlay-btn {
+            padding: 12px 25px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .overlay-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .github-link {
+            background: #333;
+            text-decoration: none;
+        }
+        
+        .project-content {
+            padding: 25px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .project-category {
+            display: block;
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+        }
+        
+        .project-year {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .project-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .tech-tag.flutter { background: rgba(2, 86, 155, 0.1); color: #02569B; }
+        .tech-tag.firebase { background: rgba(255, 202, 40, 0.1); color: #FFCA28; }
+        .tech-tag.dart { background: rgba(0, 150, 199, 0.1); color: #0096C7; }
+        .tech-tag.nodejs { background: rgba(51, 153, 51, 0.1); color: #339933; }
+        .tech-tag.mongo { background: rgba(70, 153, 83, 0.1); color: #469953; }
+        .tech-tag.angular { background: rgba(221, 0, 49, 0.1); color: #DD0031; }
+        .tech-tag.typescript { background: rgba(49, 120, 198, 0.1); color: #3178C6; }
+        .tech-tag.bootstrap { background: rgba(121, 82, 179, 0.1); color: #7952B3; }
+        .tech-tag.stripe { background: rgba(99, 91, 255, 0.1); color: #635BFF; }
+        .tech-tag.notifications { background: rgba(255, 149, 0, 0.1); color: #FF9500; }
+        .tech-tag.python { background: rgba(55, 118, 171, 0.1); color: #3776AB; }
+        .tech-tag.django { background: rgba(9, 45, 32, 0.1); color: #092D20; }
+        .tech-tag.chartjs { background: rgba(255, 99, 132, 0.1); color: #FF6384; }
+        .tech-tag.ml { background: rgba(255, 87, 34, 0.1); color: #FF5722; }
+        .tech-tag.html { background: rgba(227, 79, 38, 0.1); color: #E34F26; }
+        .tech-tag.css { background: rgba(21, 114, 182, 0.1); color: #1572B6; }
+        .tech-tag.js { background: rgba(247, 223, 30, 0.1); color: #F7DF1E; }
+        .tech-tag.animations { background: rgba(156, 39, 176, 0.1); color: #9C27B0; }
+        .tech-tag.fastapi { background: rgba(0, 153, 188, 0.1); color: #0099BC; }
+        .tech-tag.postgres { background: rgba(51, 103, 145, 0.1); color: #336791; }
+        .tech-tag.jwt { background: rgba(0, 0, 0, 0.1); color: var(--text-primary); }
+        .tech-tag.docker { background: rgba(13, 183, 237, 0.1); color: #0DB7ED; }
+        
+        .project-features {
+            margin-bottom: 20px;
+        }
+        
+        .project-features h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        
+        .project-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .project-features li {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .project-features i {
+            color: var(--secondary-color);
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-link {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.3s;
+        }
+        
+        .project-link:hover {
+            gap: 10px;
+        }
+        
+        .project-stats .stat,
+        .project-rating,
+        .project-impact,
+        .project-note,
+        .project-performance {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .project-stats .stat {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .project-stats .stat i {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+        
+        .project-stats .stat h4 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin: 0;
+        }
+        
+        .project-stats .stat p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .project-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stars {
+            color: #FFD700;
+        }
+        
+        .rating-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .project-impact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .project-impact i {
+            color: var(--secondary-color);
+        }
+        
+        .project-impact span {
+            color: var(--text-secondary);
+        }
+        
+        .project-note {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .project-note i {
+            color: var(--primary-color);
+        }
+        
+        .project-note span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .project-performance {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .performance-metric {
+            text-align: center;
+        }
+        
+        .performance-metric h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        
+        .performance-metric p {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin: 0;
+        }
+        
+        .project-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background: var(--bg-primary);
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 20px;
+            position: relative;
+            animation: modalFadeIn 0.3s;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--bg-secondary);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: var(--text-primary);
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .modal-close:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .modal-body {
+            padding: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-stats {
+                gap: 20px;
+            }
+            
+            .stat-item {
+                min-width: 100px;
+                padding: 15px;
+            }
+            
+            .stat-item h3 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-body {
+                padding: 20px;
+            }
+        }
+    </style>
+</body>
+</html>

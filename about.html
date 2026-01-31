@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | GERMANN TECHI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Navigation (identique à index.html) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">GT</span>
+                <span class="logo-full">GERMANN TECHI</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="about.html" class="nav-link active"><i class="fas fa-user"></i> À propos</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Compétences</a></li>
+                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">À propos de moi</h1>
+            <p class="page-subtitle">Découvrez mon parcours, mes expériences et ma passion pour la technologie</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section about-content">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Column: Photo and Personal Info -->
+                <div class="about-left">
+                    <div class="profile-card">
+                        <div class="profile-image-container">
+                            <div class="profile-image-wrapper">
+                                <img src="assets/image/LOG.jpg" alt="GERMANN TECHI" class="profile-image">
+                                <div class="profile-status">
+                                    <span class="status-dot"></span>
+                                    Disponible pour des opportunités
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-info">
+                            <h2 class="profile-name">GERMANN TECHI</h2>
+                            <p class="profile-title">Développeur Full Stack</p>
+                            <p class="profile-location">
+                                <i class="fas fa-map-marker-alt"></i> Douala, Cameroun
+                            </p>
+                            
+                            <div class="profile-quick-info">
+                                <div class="info-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <div>
+                                        <h4>Expérience</h4>
+                                        <p>2+ années</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <div>
+                                        <h4>Éducation</h4>
+                                        <p>Licence en cours</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-language"></i>
+                                    <div>
+                                        <h4>Langues</h4>
+                                        <p>Français, Anglais</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="assets/image/CV_to_germann.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i> Télécharger mon CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Bio and Timeline -->
+                <div class="about-right">
+                    <div class="bio-section">
+                        <h2 class="section-subtitle">Mon Histoire</h2>
+                        <p class="bio-text">
+                            Passionné par la technologie depuis mon plus jeune âge, j'ai transformé ma curiosité 
+                            en expertise professionnelle. Mon parcours atypique, allant de la physique à 
+                            l'informatique, m'a permis de développer une approche unique et analytique 
+                            pour résoudre des problèmes complexes.
+                        </p>
+                        <p class="bio-text">
+                            Aujourd'hui, je me spécialise dans le développement d'applications web et mobiles 
+                            innovantes, en combinant créativité et rigueur technique pour offrir des solutions 
+                            qui ont un impact réel.
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline: Education -->
+                    <div class="timeline-section">
+                        <h2 class="section-subtitle">Éducation</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2026</div>
+                                <div class="timeline-content">
+                                    <h3>Brevet de Technicien Supérieur (BTS)</h3>
+                                    <p class="timeline-location">Institut Universitaire du Golfe de Guinée (IUG)</p>
+                                    <p>Spécialisation en Genie Logiciel et systèmes informatiques</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h3>Licence en Physique</h3>
+                                    <p class="timeline-location">Université de Douala</p>
+                                    <p>Formation scientifique approfondie avec spécialisation en physique fondamentale</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020</div>
+                                <div class="timeline-content">
+                                    <h3>Baccalauréat Scientifique</h3>
+                                    <p class="timeline-location">Collège Kamtchoum-Ndami</p>
+                                    <p>Mention Bien, option Mathématiques et Sciences Physiques</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline: Experience -->
+                    <div class="timeline-section">
+                        <h2 class="section-subtitle">Expérience Professionnelle</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2025-2026</div>
+                                <div class="timeline-content">
+                                    <h3>Commercial Digital</h3>
+                                    <p class="timeline-location">MIMOSA</p>
+                                    <p>Gestion des campagnes digitales, optimisation des performances marketing, 
+                                    suivi des indicateurs de performance et stratégies de croissance en ligne.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024-2025</div>
+                                <div class="timeline-content">
+                                    <h3>Commercial (Administrateur de vente)</h3>
+                                    <p class="timeline-location">MIMOSA</p>
+                                    <p>Gestion des ventes, suivi des clients, coordination des opérations commerciales 
+                                    et développement de stratégies de vente.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h3>Assistant Laboratoire</h3>
+                                    <p class="timeline-location">MIMOSA</p>
+                                    <p>Gestion des échantillons, suivi des expériences, documentation des résultats 
+                                    et support aux chercheurs.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023-2024</div>
+                                <div class="timeline-content">
+                                    <h3>Chef Opérateur</h3>
+                                    <p class="timeline-location">MIMOSA</p>
+                                    <p>Supervision des opérations, gestion des équipes, optimisation des processus 
+                                    et amélioration de l'efficacité opérationnelle.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020(06mois)</div>
+                                <div class="timeline-content">
+                                    <h3>Assistant Administratif</h3>
+                                    <p class="timeline-location">LIPANOL</p>
+                                    <p>Gestion administrative, coordination des tâches, suivi des documents 
+                                    et support à l'équipe de direction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="section skills-preview">
+        <div class="container">
+            <h2 class="section-title">Domaines d'expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Développement Frontend</h3>
+                    <p>Création d'interfaces utilisateur modernes et interactives</p>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Développement Backend</h3>
+                    <p>Architecture et développement d'APIs robustes</p>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Développement cross-platform avec Flutter</p>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Bases de Données</h3>
+                    <p>Conception et optimisation de bases de données</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="skills.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-right"></i> Voir toutes mes compétences
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique à index.html) -->
+    <footer class="footer">
+        <!-- Même footer que index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">GT</span>
+                        <span class="logo-full">GERMANN TECHI</span>
+                    </a>
+                    <p class="footer-description">
+                        Développeur passionné créant l'avenir numérique, une ligne de code à la fois.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Germs-444/Germs-444" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/germann-sandes-techi-kaptue/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="skills.html">Compétences</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Applications Mobiles</a></li>
+                        <li><a href="#">Consulting Tech</a></li>
+                        <li><a href="#">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:germanntechi@email.com">germanntechi@email.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+237675113336">+237 675 113 336</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Douala, Cameroun</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 GERMANN TECHI. Tous droits réservés.</p>
+                <p>Portfolio germanntechi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
